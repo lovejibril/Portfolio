@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>AAAAAAAAAAAAAA</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Slide</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    body {
+      background-image: url("jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+  <body>
+    <div class="MenuBar">
+      <div class="Filter">
+        <select name="bun" id="bun" style="width: 250px">
+          <option value="English">English</option>
+          <option value="Japanese">日本語</option>
+          <option value="Chinese">中文</option>
+        </select>
+      </div>
+      <div class="Menu">
+        <a href="index.html">Home</a>
+        &nbsp;
+        <a href="Illustration.html">Illustration</a>
+        &nbsp;
+        <a href="photography.html">Photography</a>
+        &nbsp;
+        <a href="aboutme.html">About Me</a>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="ame_mining.png" alt="me" />
+    </div>
+    <div class="type-artist">
+      <p>Illustration / Photography</p>
+    </div>
+    <div class="name">
+      <p>Tim Shih</p>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="street4.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="street2.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="street5.jpg" style="width: 100%" />
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+    </div>
+    <div>
+        <div class="category">
+            <div class="container">
+                <img src="ame_mining.png" alt="Snow">
+                <button class="btn">Home</button>
+              </div>
+              <div class="container">
+                <img src="ame_mining.png" alt="Snow">
+                <button class="btn">About Me</button>
+              </div>
+              <div class="container">
+                <img src="ame_mining.png" alt="Snow">
+                <button class="btn">Illustration</button>
+              </div>
+              <div class="container">
+                <img src="ame_mining.png" alt="Snow">
+                <button class="btn">Photography</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+  </body>
 </html>
