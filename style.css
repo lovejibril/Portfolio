@@ -150,7 +150,10 @@ img {
   justify-content: space-evenly;
   margin: 100px;
 }
-
+a .category{
+  display: flex;
+  align-content: center;
+}
 .btn  {
   position: absolute;
   background-color: transparent;
@@ -197,7 +200,7 @@ img {
   right: 0;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #bbb;
+  background-color: rgb(252, 184, 184);
 }
 .text {
   color: black;
