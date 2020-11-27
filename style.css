@@ -144,14 +144,15 @@ img {
   }
 }
 /* table*/
+
+a .category{
+  display: flex;
+  align-content: center;
+}
 .category {
   display: flex;
   justify-content: space-evenly;
   margin: 100px;
-}
-a .category{
-  display: flex;
-  align-content: center;
 }
 .btn  {
   position: absolute;
@@ -297,7 +298,9 @@ a .category{
     font-family: "Ubuntu";
     box-sizing: border-box;
     width: 400px;
+    height: 622;
   }
+
   nav {
     background: rgb(237, 255, 233);
     display: flex;
@@ -311,8 +314,9 @@ a .category{
   }
   .MenuBar {
     display: flex;
-    width: 100%;
+    width: 400px;
     margin-top: 20px;
+    margin-left: 30px;
   }
   .Filter {
     display: flex;
@@ -340,9 +344,9 @@ a .category{
   .footerbg{
     background: rgb(255, 223, 228);
     padding-top: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
   }
   .profile {
     display: flex;
@@ -357,15 +361,19 @@ a .category{
   .type-artist {
     display: flex;
     justify-content: center;
-    margin-left: 110px;
+    width: 200px;
+
+    margin-left: 100px;
     margin-top: 25px;
   }
   .name {
     display: flex;
     justify-content: center;
+    align-content: center;
+    width: 200px;
     margin-top: 25px;
     margin-bottom: 100px;
-    margin-left: 110px;
+    margin-left: 100px;
     font-size: 45px;
   }
   
@@ -374,11 +382,10 @@ a .category{
   .category {
     display: flex;
     justify-content: space-evenly;
-    margin: 100px;
-  }
-  a .category{
-    display: flex;
-    align-content: center;
+    margin: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
   }
   .btn  {
     position: absolute;
@@ -389,26 +396,49 @@ a .category{
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width: 200px;
-    height: 200px;
+    width: 75px;
+    height: 75px;
   }
   .category img {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 75px;
+    height: 75px;
     opacity: %;
+  }
+  .btn{
+    font-size: 10px;
   }
   .container {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    width: 50px;
     margin-bottom: 10px;
-    height: 200px;
+    height: 50px;
   }
   .container .btn:hover {
     background-color: #f2f2f2;
     opacity: 50%;
   }
+  a .category{
+    display: flex;
+    align-content: center;
+  }
+  .text {
+    color: black;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .footerbg{
+    display: none;
+  }
+
   .container2 {
     position: relative;
   }
@@ -417,6 +447,7 @@ a .category{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    width: 400px;
   }
   .overlay {
     position: absolute;
@@ -454,4 +485,3 @@ a .category{
     align-content: center;
     font-size: 20px;
   }
-}
